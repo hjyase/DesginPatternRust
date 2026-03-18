@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "Singlton"
+name = "Singleton"
 version = "0.1.0"

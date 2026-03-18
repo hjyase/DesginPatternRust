@@ -1,0 +1,32 @@
+# Rust 编译产物（核心，必须忽略）
+target/
+
+# Cargo 缓存/锁文件（可选忽略，建议保留 Cargo.lock 提交）
+# Cargo.lock （库项目建议忽略，二进制项目建议提交）
+Cargo.bak
+.cargo/
+
+# 环境变量文件
+.env
+.env.local
+.env.*
+
+# 编辑器/IDE 配置文件（VS Code）
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store  # Mac 系统隐藏文件
+
+# 日志/临时文件
+*.log
+tmp/
+temp/
+
+# 测试/覆盖率文件
+coverage/
+*.profraw
+
+# 构建脚本生成的文件
+build/
+out/
