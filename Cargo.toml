@@ -1,5 +1,13 @@
 [workspace]
+workspace.resolver = "3"
 
 members = [
     "Singleton",
 ]
+
+
+[profile.dev]
+warn = []# 移除 dead_code，或直接写 warn = []
+
+[profile.release]
+warn = []

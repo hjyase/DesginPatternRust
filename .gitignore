@@ -1,10 +1,13 @@
 # Rust 编译产物（核心，必须忽略）
 target/
+target/.rustc_info.json
 
 # Cargo 缓存/锁文件（可选忽略，建议保留 Cargo.lock 提交）
 # Cargo.lock （库项目建议忽略，二进制项目建议提交）
 Cargo.bak
 .cargo/
+
+.DS_Store
 
 # 环境变量文件
 .env
