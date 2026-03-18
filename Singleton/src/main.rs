@@ -6,7 +6,7 @@ fn main() {
     println!("Hello, Singleton!");
     {
         let mut cfg = CarrierConfig::instance().lock().unwrap();
-        let s = cfg.set_max_connections(5);
+        let _s = cfg.set_max_connections(5);
 
         let n = cfg.max_connections;
         println!("cfg max connection is {}", n);

@@ -1,13 +1,14 @@
 [workspace]
-workspace.resolver = "3"
+resolver = "3"
 
 members = [
     "Singleton",
+    "Observer",
 ]
 
-
-[profile.dev]
-warn = []# 移除 dead_code，或直接写 warn = []
-
-[profile.release]
-warn = []
+# 核心：通过 rustflags 全局禁用 unused/dead_code 警告（适配所有 Cargo 版本）
+[build]
+rustflags = [
+  "-A", "unused",        # 禁用所有「未使用」相关警告（包含 never read）
+  "-A", "dead_code"      # 禁用「死代码」警告
+]
