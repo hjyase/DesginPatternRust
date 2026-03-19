@@ -1,6 +1,7 @@
-
-use crate::factory::{Car, Roboot, toy::{Toy, ToyType}};
-
+use crate::factory::{
+    Car, Roboot,
+    toy::{Toy, ToyType},
+};
 
 pub struct Factory;
 

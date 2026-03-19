@@ -10,5 +10,4 @@ fn main() {
 
     let robbot = Factory::build_toy(factory::ToyType::Robbot);
     robbot.run();
-
 }

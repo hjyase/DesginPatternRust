@@ -23,5 +23,4 @@ fn main() {
 
     publisher.unregister_listener(femal.clone());
     publisher.notify_message("thirsth notify");
-
 }

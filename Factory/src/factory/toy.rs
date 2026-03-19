@@ -1,5 +1,3 @@
-
-
 pub trait Toy {
     fn run(&self);
 }
