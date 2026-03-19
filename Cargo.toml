@@ -4,6 +4,7 @@ resolver = "3"
 members = [
     "Singleton",
     "Observer",
+    "Factory",
 ]
 
 # 核心：通过 rustflags 全局禁用 unused/dead_code 警告（适配所有 Cargo 版本）

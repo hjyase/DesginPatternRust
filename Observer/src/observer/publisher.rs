@@ -16,6 +16,12 @@ impl Publisher {
         } else {
             println!("register_listener failure, current length is {}", self.listeners.try_lock().unwrap().len());
         };
+
+        if let Some(ll) =  self.listeners.try_lock().ok(){
+            let size = ll.len();
+        } else {
+
+        }
     }
 
     pub fn unregister_listener(&self, listener : Arc<dyn Listener>) {
